@@ -12,14 +12,19 @@
     these locations may be retrieved if the location is recorded with
     care. Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development. One
-    active location is <a href="http://R-Forge.R-project.org/">
+    location is <a href="https://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
-    <a href="http://R-Forge.R-project.org/softwaremap/trove_list.php">project
-    tree</a>. Information on R-spatial packages, especially <pkg>sp</pkg> 
-    is posted on the R-Forge rspatial project 
-    <a href="http://rspatial.R-Forge.R-project.org/">website</a>, including
-    a visualisation gallery. Active development of <pkg>sp</pkg> is 
-    continuing on <github>edzer/sp</github>.</p>
+    <a href="https://R-Forge.R-project.org/softwaremap/trove_list.php">project
+    tree</a>. Information on R-spatial packages was until 2016 posted on the R-Forge rspatial project 
+    <a href="https://rspatial.R-Forge.R-project.org/">website</a>, including
+    a visualisation gallery. </p>
+    <p>Another set of locations for the development and maintenance of packages
+    is on <a href="https://github.com/">Github</a>. Some key packages
+    including <pkg>sf</pkg> and <pkg>stars</pkg> are grouped under
+    <a href="https://github.com/r-spatial">r-spatial</a>, others including
+    <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
+    Maintenance of the <pkg>sp</pkg> is continuing here:
+    <github>edzer/sp</github>.</p>
 
     <p>The contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
@@ -32,45 +37,51 @@
     under the "Events" tab of <a href="http://r-spatial.org/">this blog</a>.
     </p>
 
-    There are a number of contributed tutorials and introductions; 
+    <p>There are a number of contributed tutorials and introductions; 
     a recent one is 
     <a href="https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf">
     Introduction to visualising spatial data in R</a> by Robin Lovelace 
-    and James Cheshire.
+    and James Cheshire.</p>
 
     <p>The packages in this
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know.
     </p>
 	
-	<h2 id="classes-for-spatial-data-and-metadata">Classes for spatial data and metadata</h2>
+    <h2 id="classes-for-spatial-data-and-metadata">Classes for spatial
+    data and metadata</h2>
 	
-	<p>Because many of the packages importing and using spatial data have had to include
-      objects of storing data and functions for visualising it, an initiative is in 
-	  progress to construct shared classes and plotting functions for spatial data.</p>
+    <p>Because many of the packages importing and using spatial data have had
+    to include objects of storing data and functions for visualising it, an
+    initiative is in progress to construct shared classes and plotting
+    functions for spatial data.</p>
 	  
-	<p>Complementary initatives are ongoing to support a better handling of geographic 
-	metadata in R</p>
+    <p>Complementary initatives are ongoing to support a better handling of
+    geographic metadata in R</p>
 	  
-	<p><strong>Spatial data - general</strong></p>
+    <p><strong>Spatial data - general</strong></p>
     <ul>
-	  <li><pkg>sp</pkg> package provides classes and methods for dealing with spatial data 
+	  <li>The <pkg>sp</pkg> package provides classes and methods for dealing with spatial data 
 	  and is discussed in a note in
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.</li>  
-	  <li><pkg>sf</pkg> is a new package now on CRAN, and is being
-      actively developed on <github>edzer/sfr</github>,
+	  <li><pkg>sf</pkg> is a newer package now on CRAN, and is being
+      actively developed here: <github>rspatial/sf</github>,
       providing Simple Features for R, in compliance with the 
 	  <a href="http://www.opengeospatial.org/standards/sfa">OGC Simple Feature</a> standard. 
 	  The development of the package is being supported by the 
 	  <a href="https://www.r-consortium.org/">R Consortium</a>. 
 	  It provides simple features access for vector data, and as such is a 
-	  modern implementation and standardization of parts of <pkg>sp</pkg>.</li> 
-	  <li><pkg>stplanr</pkg> provides a "SpatialLinesNetwork" class based on 
-      objects defined in <pkg>sp</pkg> and <pkg>igraph</pkg> that can be used 
-      for routing analysis within R. Another network package is
+	  modern implementation and standardization of parts of <pkg>sp</pkg>. It is documented in an <a href="https://journal.r-project.org/archive/2018/RJ-2018-009/index.html">R Journal</a> article.</li> 
+          <li><pkg>stars</pkg> is being actively  developed here: 
+          <github>rspatial/stars</github>, and supported by the 
+	  <a href="https://www.r-consortium.org/">R Consortium</a>; it
+          provides for spatiotemporal data in the form of dense arrays .</li>
+	  <li><pkg>stplanr</pkg> provides a "SpatialLinesNetwork" class based
+      on objects defined in <pkg>sp</pkg> and <pkg>igraph</pkg> that can be
+      used for routing analysis within R. Another network package is
       <pkg>shp2graph</pkg>.</li>
-	  <li><pkg>spacetime</pkg> package extends the shared classes defined in <pkg>sp</pkg> for 
+	  <li>The <pkg>spacetime</pkg> package extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>).</li>
 	  <li><pkg>Grid2Polygons</pkg> converts a  spatial object from class 
 	  SpatialGridDataFrame to SpatialPolygonsDataFrame.</li>
@@ -81,11 +92,16 @@
 	  
 	<p><strong>Raster data</strong></p>
 	<ul>
-      <li><pkg>raster</pkg> package is a major extension of spatial data 
+      <li><pkg>raster</pkg> package is a major extension of <pkg>sp</pkg>spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
       for both raster and vector data. Used with <pkg>rasterVis</pkg>, it
       can also provide enhanced visualisation and interaction. </li>
+      <li><pkg>stars</pkg> provides for spatiotemporal data in the form of dense arrays,
+      with space and time being array dimensions. Examples include socio-economic or
+      demographic data, environmental variables monitored at fixed stations, time series of
+      satellite images with multiple spectral bands, spatial simulations, and climate model
+      results.</li>
       <li><pkg>spatial.tools</pkg> package contains spatial functions meant to 
       enhance the core functionality of the <pkg>raster</pkg> package, 
       including a parallel processing engine for use with rasters.</li>
@@ -133,11 +149,11 @@
 	<p><em>OGC Standard Data formats</em></p>
 	<ul>
 		<li><em>Well-Known Text (WKT) / Well-Known Binary (WKB):</em> These standards are
-		part of the OGC Simple Feature specification. The <pkg>rgeos</pkg> 
+		part of the OGC Simple Feature specification. Both WKT/WKB formats are supported by <pkg>sf</pkg> package that
+		implements the whole OGC Simple Feature specification in R. Apart from the <pkg>sf</pkg> package, the <pkg>rgeos</pkg> 
 		package provides functions for reading and writing well-known text (WKT) geometry. 
 		Package <pkg>wkb</pkg> package provides functions for reading and writing well-known 
-		binary (WKB) geometry. Both WKT/WKB formats are supported by <pkg>sf</pkg> package that
-		implements the whole OGC Simple Feature specification in R.</li>
+		binary (WKB) geometry.</li>
 		<li><em>GeoJSON:</em> An rOpenSci
 		<a href="http://ropensci.org/blog/blog/2016/11/22/geospatial-suite">
 		blog entry</a> described a GeoJSON-centred approach to reading GeoJSON
@@ -173,15 +189,15 @@
 	  <li><em>PostGIS:</em> The <pkg>rpostgis</pkg> package provides additional 
 	  functions to the <pkg>RPostgreSQL</pkg> package to interface R with 
 	  a 'PostGIS'-enabled database, as well as convenient wrappers to common 
-	  'PostgreSQL' queries.<pkg>postGIStools</pkg> package provides functions 
+	  'PostgreSQL' queries. It is documented in an <a href="https://journal.r-project.org/archive/2018/RJ-2018-025/index.html">R Journal</a> article. <pkg>postGIStools</pkg> package provides functions 
 	  to convert geometry and 'hstore' data types from 'PostgreSQL' into standard 
 	  R objects, as well as to simplify the import of R data frames (including spatial
       data frames) into 'PostgreSQL'. <pkg>sf</pkg> also provides an R interface to 
 	  Postgis, for both reading and writing, throuh GDAL.</li>
-      <li><em>GRASS:</em>Integration with version 6.* and of the leading open source
-      GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
+      <li><em>GRASS:</em>Integration with version 7.* of the leading open source
+      GIS, GRASS, is provided in CRAN package <pkg>rgrass7</pkg>, using
       <pkg>rgdal</pkg> for exchanging data. 
-      For GRASS 7.*, use <pkg>rgrass7</pkg>.</li>
+      For GRASS 6.*, use <pkg>spgrass6</pkg>.</li>
 	  <li><em>SAGA:</em><pkg>RSAGA</pkg> is a similar shell-based wrapper for SAGA commands.</li>
 	  <li><em>Quantum GIS (QGIS):</em><pkg>RQGIS</pkg>
       package establishes an interface between R and QGIS, i.e. it allows
@@ -301,6 +317,9 @@
       inspect spatial objects, facilitate handling and reporting of topology 
       errors and geometry validity issues. It may be used to reduce the likelihood 
 	  of having issues when doing spatial data processing.</li>
+	  <li><pkg>lwgeom</pkg> may also be used to 
+      facilitate handling and reporting of topology 
+      errors and geometry validity issues.</li>
 	</ul>
 	  
 	<h2 id="visualizing-spatial-data">Visualizing spatial data</h2>     
@@ -748,6 +767,7 @@
     <pkg>lctools</pkg>
     <pkg>leaflet</pkg>
     <pkg>leafletR</pkg>
+    <pkg>lwgeom</pkg>
     <pkg>magclass</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapmisc</pkg>
@@ -792,6 +812,7 @@
     <pkg>RgoogleMaps</pkg>
     <pkg>rgrass7</pkg>
     <pkg>RNetCDF</pkg>
+    <pkg>RPostgreSQL</pkg>
     <pkg>rpostgis</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RQGIS</pkg>
@@ -802,10 +823,10 @@
     <pkg>rworldxtra</pkg>
     <pkg>S2sls</pkg>
     <pkg>seg</pkg>
+    <pkg priority="core">sf</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg>shp2graph</pkg>
-    <pkg priority="core">sf</pkg>
     <pkg priority="core">sp</pkg>
     <pkg priority="core">spacetime</pkg>
     <pkg>siplab</pkg>
@@ -846,6 +867,7 @@
     <pkg>spTimer</pkg>
     <pkg>SSN</pkg>
     <pkg>starma</pkg>
+    <pkg>stars</pkg>
     <pkg>statebins</pkg>
     <pkg>Stem</pkg>
     <pkg>stplanr</pkg>
@@ -866,8 +888,8 @@
 
     
   <links>
+    <view>SpatioTemporal</view>
     <view>Environmetrics</view>
-    <a href="http://geodacenter.asu.edu/projects/rsp">Rgeo: Spatial Statistics with R</a>
     <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/">R-SIG-Geo mailing list</a>
   </links> 
 
