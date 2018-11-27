@@ -45,7 +45,9 @@
 
     <p>The packages in this
     view can be roughly structured into the following topics. If you think
-    that some package is missing from the list, please let me know.
+    that some package is missing from the list, please fork the <a href="https://github.com/r-spatial/task_views">task view 
+    repository</a> and provide a pull request in ctv format for the 
+    ctv/Spatial.ctv file.
     </p>
 	
     <h2 id="classes-for-spatial-data-and-metadata">Classes for spatial
