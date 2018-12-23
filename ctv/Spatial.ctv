@@ -392,9 +392,9 @@
       <li><pkg>statebins</pkg> provides a simpler binning approach to US states.</li>
       <li><pkg>cartogram</pkg> package allows for constructions of a continuous area cartogram 
       by a rubber sheet distortion algorithm, 
-      non-contiguous Area Cartograms, and non-overlapping Circles Cartogram.
+      non-contiguous Area Cartograms, and non-overlapping Circles Cartogram.</li>
       <li><pkg>geogrid</pkg> package turns polygons into rectangular or 
-      hexagonal cartograms.
+      hexagonal cartograms.</li>
     </ul>
       
      
@@ -708,6 +708,11 @@
       areal data. It supports the sparse spatial generalized linear mixed 
       model of Hughes and Haran (2013) and the centered autologistic model 
       of Caragea and Kaiser (2009).</li>
+      <li><pkg>landscapemetrics</pkg> package</li> calculates landscape metrics 
+      for categorical landscape patterns. It can be used as a drop-in replacement for 
+      <a href="https://www.umass.edu/landeco/research/fragstats/fragstats.html">FRAGSTATS</a>, 
+      as it offers a reproducible workflow for landscape analysis in a single environment. 
+      It also provides several visualization functions, e.g. to show all labeled patches or the core area of all patches.</li>
     </ul>
     
     <p>The <a href="Environmetrics.html">Environmetrics</a> Task View contains 
@@ -779,6 +784,7 @@
     <pkg>intamap</pkg>
     <pkg>ipdw</pkg>
     <pkg>landsat</pkg>
+    <pkg>landscapemetrics</pkg>
     <pkg>latticeDensity</pkg>
     <pkg>lawn</pkg>
     <pkg>lctools</pkg>
