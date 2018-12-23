@@ -821,6 +821,7 @@
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>rgrass7</pkg>
+    <pkg>rnaturalearth</pkg>
     <pkg>RNetCDF</pkg>
     <pkg>RPostgreSQL</pkg>
     <pkg>rpostgis</pkg>
