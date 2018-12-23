@@ -393,6 +393,8 @@
       <li><pkg>cartogram</pkg> package allows for constructions of a continuous area cartogram 
       by a rubber sheet distortion algorithm, 
       non-contiguous Area Cartograms, and non-overlapping Circles Cartogram.
+      <li><pkg>geogrid</pkg> package turns polygons into rectangular or 
+      hexagonal cartograms.
     </ul>
       
      
@@ -747,6 +749,7 @@
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
     <pkg>geoaxe</pkg>
+    <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
     <pkg>geojsonio</pkg>
     <pkg>GEOmap</pkg>
