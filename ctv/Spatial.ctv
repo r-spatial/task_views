@@ -239,7 +239,7 @@
       <a href="http://www.naturalearthdata.com/">Natural Earth</a> map data.
       It includes functions to download a wealth of Natural Earth vector and raster data, 
       including cultural (e.g., country boundaries, airports, roads, railroads)
-      and physical (e.g., coastline, lakes, glaciates areas) datasets.
+      and physical (e.g., coastline, lakes, glaciates areas) datasets.</li>
       <li>Modern country boundaries are
       provided at 2 resolutions by <pkg>rworldmap</pkg> along with
       functions to join and map tabular data referenced by country
@@ -710,7 +710,7 @@
       areal data. It supports the sparse spatial generalized linear mixed 
       model of Hughes and Haran (2013) and the centered autologistic model 
       of Caragea and Kaiser (2009).</li>
-      <li><pkg>landscapemetrics</pkg> package</li> calculates landscape metrics 
+      <li><pkg>landscapemetrics</pkg> package calculates landscape metrics 
       for categorical landscape patterns. It can be used as a drop-in replacement for 
       <a href="https://www.umass.edu/landeco/research/fragstats/fragstats.html">FRAGSTATS</a>, 
       as it offers a reproducible workflow for landscape analysis in a single environment. 
