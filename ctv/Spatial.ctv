@@ -76,7 +76,8 @@
       The development of the package is being supported by the 
       <a href="https://www.r-consortium.org/">R Consortium</a>. 
       It provides simple features access for vector data, and as such is a 
-      modern implementation and standardization of parts of <pkg>sp</pkg>. It is documented in an <a href="https://journal.r-project.org/archive/2018/RJ-2018-009/index.html">R Journal</a> article.</li> 
+      modern implementation and standardization of parts of <pkg>sp</pkg>. 
+      It is documented in an <a href="https://journal.r-project.org/archive/2018/RJ-2018-009/index.html">R Journal</a> article.</li> 
           <li><pkg>stars</pkg> is being actively  developed here: 
           <github>rspatial/stars</github>, and supported by the 
       <a href="https://www.r-consortium.org/">R Consortium</a>; it
@@ -390,8 +391,8 @@
       <li><pkg>recmap</pkg> package provides rectangular 
       cartograms with rectangle sizes reflecting for example population.</li> 
       <li><pkg>statebins</pkg> provides a simpler binning approach to US states.</li>
-      <li><pkg>cartogram</pkg> package allows for constructions of a continuous area cartogram 
-      by a rubber sheet distortion algorithm, 
+      <li><pkg>cartogram</pkg> package allows for constructions of a 
+      continuous area cartogram by a rubber sheet distortion algorithm, 
       non-contiguous Area Cartograms, and non-overlapping Circles Cartogram.</li>
       <li><pkg>geogrid</pkg> package turns polygons into rectangular or 
       hexagonal cartograms.</li>
@@ -638,7 +639,8 @@
       Multiplier tests. Spatial regression models that can be fitted using
       maximum likelihood include spatial lag models, spatial error models,
       and spatial Durbin models. For larger data sets, sparse matrix 
-      techniques can be used for maximum likelihood fits, while spatial two-stage least squares and generalised method of moments estimators are
+      techniques can be used for maximum likelihood fits, while spatial 
+      two-stage least squares and generalised method of moments estimators are
       an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
       accommodate both autocorrelation and heteroskedasticity.
       The <pkg>McSpatial</pkg> provides functions 
@@ -712,7 +714,8 @@
       for categorical landscape patterns. It can be used as a drop-in replacement for 
       <a href="https://www.umass.edu/landeco/research/fragstats/fragstats.html">FRAGSTATS</a>, 
       as it offers a reproducible workflow for landscape analysis in a single environment. 
-      It also provides several visualization functions, e.g. to show all labeled patches or the core area of all patches.</li>
+      It also provides several visualization functions, e.g.
+      to show all labeled patches or the core area of all patches.</li>
     </ul>
     
     <p>The <a href="Environmetrics.html">Environmetrics</a> Task View contains 
