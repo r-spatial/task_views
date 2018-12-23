@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2018-10-04</version>
+  <version>2018-12-23</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -45,7 +45,9 @@
 
     <p>The packages in this
     view can be roughly structured into the following topics. If you think
-    that some package is missing from the list, please let me know.
+    that some package is missing from the list, please fork the <a href="https://github.com/r-spatial/task_views">task view 
+    repository</a> and provide a pull request in ctv format for the 
+    ctv/Spatial.ctv file.
     </p>
     
     <h2 id="classes-for-spatial-data-and-metadata">Classes for spatial
@@ -560,8 +562,11 @@
       remediate collinearity in the GWR models. Also fits geographically 
       weighted ridge regression (GWRR) and geographically weighted lasso 
       (GWL) models. The <pkg>GWmodel</pkg> package contains functions for 
-      computing geographically weighted models. The <pkg>lctools</pkg> 
-      package provides researchers and educators with easy-to-learn user
+      computing geographically weighted (GW) models. Specifically, basic, 
+      robust, local ridge, heteroskedastic, mixed, multiscale, generalised 
+      and space-time GWR; GW summary statistics, GW PCA and GW discriminant analysis; 
+      associated tests and diagnostics; and options for a range of distance metrics. 
+      The <pkg>lctools</pkg> package provides researchers and educators with easy-to-learn user
       friendly tools for calculating key spatial statistics and to apply
       simple as well as advanced methods of spatial analysis in real data.
       These include: Local Pearson and Geographically Weighted Pearson
@@ -751,7 +756,6 @@
     <pkg>ggsn</pkg>
     <pkg>glmmBUGS</pkg>
     <pkg>gmt</pkg>
-    <pkg>Grid2Polygons</pkg>
     <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>Guerry</pkg>
