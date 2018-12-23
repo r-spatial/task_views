@@ -10,21 +10,23 @@
     "geographical" spatial data, where observations can be identified
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
-    care. Base R functions are complemented by contributed packages,
-    some of which are on CRAN, and others are still in development. One
-    location is <a href="https://R-Forge.R-project.org/">
-    R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
-    <a href="https://R-Forge.R-project.org/softwaremap/trove_list.php">project
-    tree</a>. Information on R-spatial packages was until 2016 posted on the R-Forge rspatial project 
-    <a href="https://rspatial.R-Forge.R-project.org/">website</a>, including
-    a visualisation gallery. </p>
-    <p>Another set of locations for the development and maintenance of packages
-    is on <a href="https://github.com/">Github</a>. Some key packages
+    care. 
+    
+    <p>Base R functions are complemented by contributed packages,
+    some of which are on CRAN, and others are still in development.
+    One location is <a href="https://github.com/">Github</a>. Some key packages
     including <pkg>sf</pkg> and <pkg>stars</pkg> are grouped under
     <a href="https://github.com/r-spatial">r-spatial</a>, others including
     <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
     Maintenance of the <pkg>sp</pkg> is continuing here:
     <github>edzer/sp</github>.</p>
+    Another set of locations for the development and maintenance of packages on 
+    <a href="https://R-Forge.R-project.org/">
+    R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
+    <a href="https://R-Forge.R-project.org/softwaremap/trove_list.php">project
+    tree</a>. Information on R-spatial packages was until 2016 posted on the R-Forge rspatial project 
+    <a href="https://rspatial.R-Forge.R-project.org/">website</a>, including
+    a visualisation gallery. </p>
 
     <p>The contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
@@ -58,7 +60,7 @@
     initiative is in progress to construct shared classes and plotting
     functions for spatial data.</p>
       
-    <p>Complementary initiatives are ongoing to support a better handling of
+    <p>Complementary initiatives are ongoing to support better handling of
     geographic metadata in R</p>
       
     <p><strong>Spatial data - general</strong></p>
@@ -579,7 +581,7 @@
       The <pkg>sparr</pkg> package provides another
       approach to relative risks. The <pkg>CARBayes</pkg> package 
       implements Bayesian hierarchical spatial areal unit models. In 
-      such models the spatial correlation is modelled by a set of random 
+      such models, the spatial correlation is modelled by a set of random 
       effects, which are assigned a conditional autoregressive (CAR) prior 
       distribution. Examples of the models included are the BYM model as 
       well as a recently developed localised spatial smoothing model.
@@ -589,7 +591,7 @@
       random effects. The <pkg>PReMiuM</pkg> package is for profile 
       regression, which is a Dirichlet process Bayesian clustering model;
       it provides a spatial CAR term that can be included in the fixed
-      effects (which are global, ie. non cluster specific, parameters)
+      effects (which are global, ie. non-cluster specific, parameters)
       to account for any spatial correlation in the residuals.
       The <pkg>spacom</pkg> package provides tools to
       construct and exploit spatially weighted context data, and further
@@ -626,8 +628,7 @@
       Multiplier tests. Spatial regression models that can be fitted using
       maximum likelihood include spatial lag models, spatial error models,
       and spatial Durbin models. For larger data sets, sparse matrix 
-      techniques can be used for maximum likelihood fits, while spatial two
-      stage least squares and generalised method of moments estimators are
+      techniques can be used for maximum likelihood fits, while spatial two-stage least squares and generalised method of moments estimators are
       an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
       accommodate both autocorrelation and heteroskedasticity.
       The <pkg>McSpatial</pkg> provides functions 
