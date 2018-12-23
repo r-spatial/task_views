@@ -234,6 +234,11 @@
     <p><strong>Specific geospatial data sources of interest</strong></p>
     
     <ul>
+      <li><pkg>rnaturalearth</pkg> package facilitates interaction with
+      <a href="http://www.naturalearthdata.com/">Natural Earth</a> map data.
+      It includes functions to download a wealth of Natural Earth vector and raster data, 
+      including cultural (e.g., country boundaries, airports, roads, railroads)
+      and physical (e.g., coastline, lakes, glaciates areas) datasets.
       <li>Modern country boundaries are
       provided at 2 resolutions by <pkg>rworldmap</pkg> along with
       functions to join and map tabular data referenced by country
