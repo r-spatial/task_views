@@ -12,4 +12,5 @@ Test your changes using the code below before submitting any PR:
 ```r
 library(ctv)
 ctv2html(read.ctv("ctv/Spatial.ctv"))
+check_ctv_packages("ctv/Spatial.ctv")
 ```
