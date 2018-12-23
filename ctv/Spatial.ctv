@@ -80,7 +80,7 @@
           <li><pkg>stars</pkg> is being actively  developed here: 
           <github>rspatial/stars</github>, and supported by the 
       <a href="https://www.r-consortium.org/">R Consortium</a>; it
-          provides for spatiotemporal data in the form of dense arrays .</li>
+          provides for spatiotemporal data in the form of dense arrays.</li>
       <li><pkg>stplanr</pkg> provides a "SpatialLinesNetwork" class based
       on objects defined in <pkg>sp</pkg> and <pkg>igraph</pkg> that can be
       used for routing analysis within R. Another network package is
@@ -90,8 +90,8 @@
       <li><pkg>Grid2Polygons</pkg> converts a  spatial object from class 
       SpatialGridDataFrame to SpatialPolygonsDataFrame.</li>
       <li><pkg>maptools</pkg> provides conversion functions between
-      <pkg>PBSmapping</pkg> and <pkg>spatstat</pkg> and sp classes,
-      in addition to <pkg>maps</pkg> databases and sp classes.</li>
+      <pkg>PBSmapping</pkg> and <pkg>spatstat</pkg> and <pkg>sp</pkg> classes,
+      in addition to <pkg>maps</pkg> databases and <pkg>sp</pkg> classes.</li>
     </ul>
       
     <p><strong>Raster data</strong></p>
@@ -131,10 +131,10 @@
       <p>Maps may be vector-based or raster-based. The <pkg>rgdal</pkg> package provides
       bindings to <a href="http://www.gdal.org/">GDAL (Geospatial Data Abstraction Library)</a>-supported raster
       formats and <a href="http://www.gdal.org/ogr/">OGR</a>-supported
-      vector formats. It contains functions to write raster files in supported formats. Formats 
+      vector formats. It contains functions to write raster and vector files in supported formats. Formats 
       supported by GDAL/OGR include both OGC standard  data formats (e.g. GeoJSON) and 
       proprietary formats (e.g. ESRI Shapefile).
-      The package also provides <a href="http://trac.osgeo.org/proj/">PROJ.4</a> projection
+      The package also provides <a href="https://proj4.org/">PROJ.4</a> projection
       support for vector objects 
       (<a href="http://spatialreference.org">this site</a> provides 
       searchable online PROJ.4 representations of projections). 
