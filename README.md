@@ -1,6 +1,6 @@
 # Spatial and SpatioTemporal Task Views
 
-Local copy for editing the Spatial and SpatioTemporal Task View pages.
+**Local copy for editing the Spatial and SpatioTemporal Task View pages.**
 
 This repo contains the Spatial and SpatioTemporal Task View pages in ctv format from the R-Forge **ctv** package, to enable receipt of PRs from those wishing to help keep them up to date.
 Only TV maintainers can sync them with the R-Forge SVN **ctv** repo. 
