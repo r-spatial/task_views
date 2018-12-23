@@ -390,6 +390,9 @@
       <li><pkg>recmap</pkg> package provides rectangular 
       cartograms with rectangle sizes reflecting for example population.</li> 
       <li><pkg>statebins</pkg> provides a simpler binning approach to US states.</li>
+      <li><pkg>cartogram</pkg> package allows for constructions of a continuous area cartogram 
+      by a rubber sheet distortion algorithm, 
+      non-contiguous Area Cartograms, and non-overlapping Circles Cartogram.
     </ul>
       
      
@@ -723,6 +726,7 @@
     <pkg>ash</pkg>
     <pkg>automap</pkg>
     <pkg>CARBayes</pkg>
+    <pkg>cartogram</pkg>
     <pkg>cartography</pkg>
     <pkg priority="core">classInt</pkg>
     <pkg>cleangeo</pkg>
