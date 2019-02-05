@@ -3,7 +3,7 @@
   <name>SpatioTemporal</name>
   <topic>Handling and Analyzing Spatio-Temporal Data</topic>
   <maintainer email="edzer.pebesma@uni-muenster.de">Edzer Pebesma</maintainer>
-  <version>2018-06-18</version>
+  <version>2019-02-05</version>
 
   <info>
   <p>This task view aims at presenting R packages that are useful for 
