@@ -139,6 +139,12 @@
 	   </li>
 
 	   <li>
+	   <pkg>IDE</pkg> provides functionality for modelling
+	   spatio-temporal data using the integro-difference
+	   equation.
+	   </li>
+
+	   <li>
        <pkg>RandomFields</pkg> provides kriging, conditional simulation,
        and covariance functions and maximum likelihood function fitting
 	   for a very wide range of spatio-temporal covariance models.
@@ -636,6 +642,7 @@
     <a href="http://www.jstatsoft.org/v51/i07/">Pebesma (2012). spacetime: Spatio-Temporal Data in R. Journal of Statistical Software, 51(7).</a>
     <a href="http://www.jstatsoft.org/v25/c01/">Peng (2008). A Method for Visualizing Multivariate Time Series Data. Journal of Statistical Software, Code Snippets, 25(1).</a>
     <a href="http://www.gapminder.org/world/">Gapminder world: A tool for visualization of economic and health indicators per country (including access to the underlying tables in time-wide form).</a>
+    <a href="https://spacetimewithr.org/">Wikle, C. K., Zammit-Mangion, A., and Cressie, N. (2019), Spatio-Temporal Statistics with R, Boca Raton, FL: Chapman &amp; Hall/CRC (free to download).</a>
   </links>
   <!-- what about <pkg>LICORS</pkg>, <pkg>LSC</pkg>? -->
   <!-- could add a lot more about classes, e.g. sp, move, trip and how they fit together, where there is coercion etc. -->
