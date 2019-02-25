@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2018-12-23</version>
+  <version>2019-02-25</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
