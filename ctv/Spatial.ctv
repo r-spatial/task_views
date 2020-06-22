@@ -258,7 +258,11 @@
       paper).</li>
       <li><pkg>maptools</pkg> provides an interface to GSHHS shoreline databases.</li>
       <li>The UScensus2000 suite of packages (<pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
-      use of data from the 2000 US Census more convenient. An important
+      use of data from the 2000 US Census more convenient. </li>
+      <li>The <pkg>cancensus</pkg> package provides access to Statistics 
+      Canada's Census data with the option to retrieve all data as 
+      spatial data.</li>
+      <li>An important
       data set, Guerry's "Moral Statistics of France", has been made
       available in the <pkg>Guerry</pkg> package, which provides data
       and maps and examples designed to contribute to the integration
@@ -759,6 +763,7 @@
     <pkg>aspace</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
+    <pkg>cancensus</pkg>
     <pkg>CARBayes</pkg>
     <pkg>cartogram</pkg>
     <pkg>cartography</pkg>
