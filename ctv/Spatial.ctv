@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-04-06</version>
+  <version>2019-06-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -10,7 +10,7 @@
     "geographical" spatial data, where observations can be identified
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
-    care. 
+    care.</p> 
     
     <p>Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development.
@@ -20,13 +20,14 @@
     <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
     Maintenance of the <pkg>sp</pkg> is continuing here:
     <github>edzer/sp</github>.</p>
-    Another set of locations for the development and maintenance of packages on 
+
+    <p>Another set of locations for the development and maintenance of packages on 
     <a href="https://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
     <a href="https://R-Forge.R-project.org/softwaremap/trove_list.php">project
     tree</a>. Information on R-spatial packages was until 2016 posted on the R-Forge rspatial project 
     <a href="https://rspatial.R-Forge.R-project.org/">website</a>, including
-    a visualisation gallery. </p>
+    a visualisation gallery.</p>
 
     <p>The contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
@@ -61,7 +62,7 @@
     functions for spatial data.</p>
       
     <p>Complementary initiatives are ongoing to support better handling of
-    geographic metadata in R</p>
+    geographic metadata in R.</p>
       
     <p><strong>Spatial data - general</strong></p>
     <ul>
@@ -109,7 +110,7 @@
       demographic data, environmental variables monitored at fixed stations, time series of
       satellite images with multiple spectral bands, spatial simulations, and climate model
       results.</li>
-      <li><pkg>spatial.tools</pkg> package contains spatial functions meant to 
+      <li>spatial.tools package contains spatial functions meant to 
       enhance the core functionality of the <pkg>raster</pkg> package, 
       including a parallel processing engine for use with rasters.</li>
     </ul>
@@ -179,9 +180,8 @@
     <p><em>Proprietary Data Formats</em></p>
     <ul>
       <li><em>ESRI formats:</em> <pkg>maps</pkg> (with <pkg>mapdata</pkg> and <pkg>mapproj</pkg>)
-      provides access to the same kinds of geographical databases as S -
-      <pkg>RArcInfo</pkg> allows ArcInfo v.7 binary files and *.e00
-      files to be read, and <pkg>maptools</pkg> and <pkg>shapefiles</pkg>
+      provides access to the same kinds of geographical databases as S.
+      <pkg>maptools</pkg> and <pkg>shapefiles</pkg>
       read and write ESRI ArcGIS/ArcView shapefiles.</li>
       <li><em>Others:</em> <pkg>maptools</pkg>
       package provides helper functions for writing map polygon
@@ -206,11 +206,11 @@
       <pkg>rgdal</pkg> for exchanging data. 
       For GRASS 6.*, use <pkg>spgrass6</pkg>.</li>
       <li><em>SAGA:</em><pkg>RSAGA</pkg> is a similar shell-based wrapper for SAGA commands.</li>
-      <li><em>Quantum GIS (QGIS):</em><pkg>RQGIS</pkg>
-      package establishes an interface between R and QGIS, i.e. it allows
+      <li><em>Quantum GIS (QGIS):</em>QGIS2 was supported by RQGIS.
+      QGIS3 is supported by <github>r-spatial/RQGIS3</github>, which
+      establishes an interface between R and QGIS, i.e. it allows
       the user to access QGIS functionalities from the R console. It achieves
-      this by using the QGIS Python API via the command line. Note also
-      <a href="https://stat.ethz.ch/pipermail/r-sig-geo/2016-August/024817.html">this thread</a> on an alternative R/QGIS integration.</li>
+      this by using the QGIS Python API.</li>
       <li><em>ArcGIS:</em><pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor</li>
     </ul>
@@ -258,7 +258,7 @@
       paper).</li>
       <li><pkg>maptools</pkg> provides an interface to GSHHS shoreline databases.</li>
       <li>The UScensus2000 suite of packages (<pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
-      use of data from the 2000 US Census more convenient. </li>
+      use of data from the 2000 US Census more convenient.</li>
       <li>The <pkg>cancensus</pkg> package provides access to Statistics 
       Canada's Census data with the option to retrieve all data as 
       spatial data.</li>
@@ -395,7 +395,7 @@
       <li><pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful if the user wishes to place a map backdrop 
       behind other displays.</li>
-      <li><pkg>plotGoogleMaps</pkg> package provides methods for the 
+      <li>plotGoogleMaps package provides methods for the 
       visualisation of spatial and spatio-temporal objects in Google Maps in
       a web browser.</li>
       <li><pkg>plotKML</pkg> is a package providing methods for
@@ -449,7 +449,7 @@
       wrappers, functions and data for spatial point pattern analysis,
       used in the book on Spatial Ecology of the ECESPA/AEET. The
       functions for binning points on grids in <pkg>ash</pkg> may
-      also be of interest. The <pkg>ads</pkg> package perform first-
+      also be of interest. The ads package perform first-
       and second-order multi-scale analyses derived from Ripley's
       K-function. The <pkg>aspace</pkg> package is a collection of
       functions for estimating centrographic statistics and computational
@@ -473,7 +473,7 @@
       <p>The <pkg>gstat</pkg> package
       provides a wide range of functions for univariate and multivariate
       geostatistics, also for larger datasets, while <pkg>geoR</pkg>
-      and <pkg>geoRglm</pkg> contain functions for model-based
+      and geoRglm contain functions for model-based
       geostatistics. Variogram diagnostics may be carried out with 
       <pkg>vardiag</pkg>. Automated interpolation using <pkg>gstat</pkg>
       is available in <pkg>automap</pkg>. This family of packages is
@@ -629,12 +629,12 @@
       it provides a spatial CAR term that can be included in the fixed
       effects (which are global, ie. non-cluster specific, parameters)
       to account for any spatial correlation in the residuals.
-      The <pkg>spacom</pkg> package provides tools to
+      The spacom package provides tools to
       construct and exploit spatially weighted context data, and further
       allows combining the resulting spatially weighted context data with
       individual-level predictor and outcome variables, for the purposes
       of multilevel modelling.
-      The <pkg>geospacom</pkg> package generates
+      The geospacom package generates
       distance matrices from shape files and represents spatially weighted
       multilevel analysis results. Spatial survival analysis is provided by
       the <pkg>spatsurv</pkg> - Bayesian inference for parametric proportional
@@ -682,12 +682,12 @@
       fitting spatial panel data by maximum likelihood and GM. The two 
       small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
       alternative implementations without most of the facilities of 
-      <pkg>splm</pkg>. The <pkg>HSAR</pkg> package provides Hierarchical
+      <pkg>splm</pkg>. The HSAR package provides Hierarchical
       Spatial Autoregressive Models (HSAR), based on a Bayesian Markov Chain
       Monte Carlo (MCMC) algorithm.
       <pkg>spatialprobit</pkg> make possible Bayesian estimation of the 
       spatial autoregressive probit model (SAR probit model). The 
-      <pkg>ProbitSpatial</pkg> package provides methods for fitting Binomial
+      ProbitSpatial package provides methods for fitting Binomial
       spatial probit models to larger data sets; spatial autoregressive
       (SAR) and spatial error (SEM) probit models are included. The
       <pkg>starma</pkg> package provides functions to identify, estimate
@@ -756,7 +756,6 @@
     <pkg>adehabitatHS</pkg>
     <pkg>adehabitatLT</pkg>
     <pkg>adehabitatMA</pkg>
-    <pkg>ads</pkg>
     <pkg>akima</pkg>
     <pkg>AMOEBA</pkg>
     <pkg>areal</pkg>
@@ -795,10 +794,8 @@
     <pkg>geonames</pkg>
     <pkg>georob</pkg>
     <pkg priority="core">geoR</pkg>
-    <pkg>geoRglm</pkg>
     <pkg>geonapi</pkg>
     <pkg>geosapi</pkg>
-    <pkg>geospacom</pkg>
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
     <pkg>geostatsp</pkg>
@@ -811,7 +808,6 @@
     <pkg>Guerry</pkg>
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
-    <pkg>HSAR</pkg>
     <pkg>igraph</pkg>
     <pkg>intamap</pkg>
     <pkg>ipdw</pkg>
@@ -847,16 +843,13 @@
     <pkg>ows4R</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
-    <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
     <pkg>postGIStools</pkg>
     <pkg>PReMiuM</pkg>
-    <pkg>ProbitSpatial</pkg>
     <pkg>quickmapr</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg>rangeMapper</pkg>
-    <pkg>RArcInfo</pkg>
     <pkg priority="core">raster</pkg>
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
@@ -873,7 +866,6 @@
     <pkg>RPostgreSQL</pkg>
     <pkg>rpostgis</pkg>
     <pkg>RPyGeo</pkg>
-    <pkg>RQGIS</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
     <pkg>rtop</pkg>
@@ -890,7 +882,6 @@
     <pkg>siplab</pkg>
     <pkg>smacpod</pkg>
     <pkg>smerc</pkg>
-    <pkg>spacom</pkg>
     <pkg>spaMM</pkg>
     <pkg>spanel</pkg>
     <pkg>sparr</pkg>
@@ -903,7 +894,6 @@
     <pkg>spatialprobit</pkg>
     <pkg priority="core">spatialreg</pkg>
     <pkg>spatialsegregation</pkg>
-    <pkg>spatial.tools</pkg>
     <pkg>SpatialTools</pkg>
     <pkg priority="core">spatstat</pkg>
     <pkg>spatsurv</pkg>
