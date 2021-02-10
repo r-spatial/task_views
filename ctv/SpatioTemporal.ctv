@@ -3,7 +3,7 @@
   <name>SpatioTemporal</name>
   <topic>Handling and Analyzing Spatio-Temporal Data</topic>
   <maintainer email="edzer.pebesma@uni-muenster.de">Edzer Pebesma</maintainer>
-  <version>2019-02-05</version>
+  <version>2021-01-28</version>
 
   <info>
   <p>This task view aims at presenting R packages that are useful for 
@@ -81,13 +81,6 @@
 
   <li><b>Dedicated classes:</b> dedicated classes are offered for:
   <ul>
-	<li><b>Geostatistical data:</b>
-    Package <pkg>SpatioTemporal</pkg> offers an S3 class
-    <code>STdata</code> which holds point observations and covariates
-    that can vary in space, time, and space-time, with the aim of
-	fitting and predicting a particular class of spatio-temporal models,
-	described in its vignettes.
-	</li>
 
     <li><b>Gridded/raster data:</b> package <pkg>raster</pkg> deals with
 	sets of rasters (called bricks, or stacks), and a 
@@ -157,11 +150,6 @@
 	   (GP) Models, Bayesian Auto-Regressive (AR) Models,
 	   and Bayesian Gaussian Predictive Processes (GPP)
 	   based AR Models.
-	   </li>
-
-	   <li>Package <pkg>SpatioTemporal</pkg> fits and predicts
-	   a particular class of spatio-temporal models, described
-	   in detail in its vignettes.
 	   </li>
 
 	   <li>
@@ -260,213 +248,336 @@
 
     <li><b>Moving objects, trajectories</b>
 	 <ul>
-	 <li><pkg>adehabitatLT</pkg> provides a	collection of tools
-	 for the analysis of animal movements, including biased random walk 
-	 simulation and home range estimation.
-	 </li>
 
-	 <li><pkg>trip</pkg> provides functions for accessing
-	 and manipulating spatial data for animal tracking. Filter
-	 for speed and create time spent plots from animal track
-	 data.
-	 </li>
-	 
-	 <li><pkg>tripEstimation</pkg> provides a Metropolis
-	 sampler and supporting functions for estimating animal
-	 movement from archival tags and satellite fixes.
+	 <li>There is a large (74+) and growing number of tracking, trajectory, movement and related packages on CRAN. A review paper by
+	 <a href="https://arxiv.org/abs/1901.05935"> Loo et al (2018)</a>provides a guide to summarize many available packages and
+	 their functionality.</li>
+	     <li>
+<pkg>adehabitatLT</pkg> A collection of tools for the analysis of animal movements.
+</li>
+    <li>
+<pkg>animalTrack</pkg> 2D and 3D animal tracking data can be used to reconstruct tracks through time/space with correction based on known positions. 3D visualization of animal position and attitude.
+</li>
+    <li>
+<pkg>anipaths</pkg> Animation of observed trajectories using spline-based interpolation.  Intended to be used exploratory data analysis, and perhaps for preparation of presentations.
+</li>
+    <li>
+<pkg>argosfilter</pkg> Functions to filters animal satellite tracking data
+        obtained from Argos. It is especially indicated for telemetry
+        studies of marine animals, where Argos locations are
+        predominantly of low-quality.
+</li>
+    <li>
+<pkg>AtmRay</pkg> Calculates acoustic traveltimes and ray paths in 1-D,
+        linear atmospheres.  Later versions will support arbitrary 1-D
+        atmospheric models, such as radiosonde measurements and
+        standard reference atmospheres.
+</li>
+    <li>
+<pkg>BayesianAnimalTracker</pkg> Bayesian melding approach to combine the GPS observations and Dead-Reckoned path for an accurate animal's track, or equivalently, use the GPS observations to correct the Dead-Reckoned path. It can take the measurement errors in the GPS observations into account and provide uncertainty statement about the corrected path. The main calculation can be done by the BMAnimalTrack function.
+</li>
+    <li>
+<pkg>BBMM</pkg> The model provides an empirical estimate of a movement
+        path using discrete location data obtained at relatively short
+        time intervals.
+</li>
+    <li>
+<pkg>bcpa</pkg> The Behavioral Change Point Analysis (BCPA) is a method of
+    identifying hidden shifts in the underlying parameters of a time series,
+    developed specifically to be applied to animal movement data which is
+    irregularly sampled.  The method is based on: E.
+    Gurarie, R. Andrews and K. Laidre A novel method for identifying
+    behavioural changes in animal movement data (2009) Ecology Letters 12:5
+    395-408.
+</li>
+    <li>
+<pkg>bsam</pkg> Tools to fit Bayesian state-space models to animal tracking data. Models are provided for location
+    filtering, location filtering and behavioural state estimation, and their hierarchical versions.
+    The models are primarily intended for fitting to ARGOS satellite tracking data but options exist to fit
+    to other tracking data types. For Global Positioning System data, consider the 'moveHMM' package.
+    Simplified Markov Chain Monte Carlo convergence diagnostic plotting is provided but users are encouraged
+    to explore tools available in packages such as 'coda' and 'boa'.
+</li>
+    <li>
+<pkg>caribou</pkg> This is a package for estimating the population size of
+        migratory caribou herds based on large scale aggregations
+        monitored by radio telemetry. It implements the methodology
+        found in the article by Rivest et al. (1998) about caribou
+        abundance estimation. It also includes a function based on the
+        Lincoln-Petersen Index as applied to radio telemetry data by
+        White and Garrott (1990).
+</li>
+    <li>
+<pkg>crawl</pkg> Fit continuous-time correlated random walk models with time indexed
+    covariates to animal telemetry data. The model is fit using the Kalman-filter on
+    a state space version of the continuous-time stochastic movement process.
+</li>
+    <li>
+<pkg>ctmcmove</pkg> Software to facilitates taking movement data in xyt format and pairing it with raster covariates within a continuous time Markov chain (CTMC) framework.  As described in Hanks et al. (2015), this allows flexible modeling of movement in response to covariates (or covariate gradients) with model fitting possible within a Poisson GLM framework.
+</li>
+    <li>
+<pkg>ctmm</pkg> Functions for identifying, fitting, and applying continuous-space, continuous-time stochastic movement models to animal tracking data.
+</li>
+    <li>
+<pkg>EMbC</pkg> Unsupervised, multivariate, binary clustering for meaningful annotation of data, taking into account the uncertainty in the data. A specific constructor for trajectory analysis in movement ecology yields behavioural annotation of trajectories based on estimated local measures of velocity and turning angle, eventually with solar position covariate as a daytime indicator, ("Expectation-Maximization Binary Clustering for Behavioural Annotation").
+</li>
+    <li>
+<pkg>eyelinker</pkg> Eyelink eye trackers output a horrible mess, typically under
+    the form of a '.asc' file. The file in question is an assorted collection of
+    messages, events and raw data. This R package will attempt to make sense of it.
+</li>
+    <li>
+<pkg>eyetracking</pkg> Misc function for working with eyetracking data
+</li>
+    <li>
+<pkg>fishmove</pkg> Functions to predict fish movement parameters plotting leptokurtic fish dispersal kernels (see Radinger and Wolter, 2014: Patterns and predictors of fish dispersal in rivers. Fish and Fisheries. 15:456-473.)
+</li>
+    <li>
+<pkg>FLightR</pkg> Spatio-temporal locations of an animal are computed
+    from annotated data with a hidden Markov  model via particle
+    filter algorithm. The package is relatively robust to varying
+    degrees of shading.
 
-	 It further provides data handling and estimation functions
-	 for animal movement estimation from archival or satellite
-	 tags. Helper functions are included for making image
-	 summaries binned by time interval from MCMC simulations
-	 of point data.
-	 </li>
+</li>
+    <li>
+<pkg>foieGras</pkg> Fits continuous-time random walk and correlated random walk state-space models to filter Argos satellite location data. Template Model Builder ('TMB') is used for fast estimation. The Argos data can be: (older) least squares-based locations; (newer) Kalman filter-based locations with error ellipse information; or a mixture of both. Separate measurement models are used for these two data types. The models estimate two sets of location states corresponding to: 1) each observation, which are (usually) irregularly timed; and 2) user-specified time intervals (regular or irregular).
+</li>
+    <li>
+<pkg>gazepath</pkg> Eye-tracking data must be transformed into fixations and saccades before it can be analyzed. This package provides a non-parametric speed-based approach to do this on a trial basis. The method is especially useful when there are large differences in data quality, as the thresholds are adjusted accordingly. The same pre-processing procedure can be applied to all participants, while accounting for individual differences in data quality.
+</li>
+    <li>
+<pkg>GeoLight</pkg> Provides basic functions for global
+    positioning based on light intensity measurements over time.
+    Positioning process includes the determination of sun events, a
+    discrimination of residency and movement periods, the
+    calibration of period-specific data and, finally, the
+    calculation of positions.
+</li>
+    <li>
+<pkg>marcher</pkg> A set of tools for likelihood-based estimation, model selection and testing of two- and three-range shift and migration models for animal movement data as described in Gurarie et al. (2017).  Provided movement data (X, Y and Time), including irregularly sampled data, functions estimate the time, duration and location of one or two range shifts, as well as the ranging area and auto-correlation structure of the movment.  Tests assess, for example, whether the shift was "significant", and whether a two-shift migration was a true return migration.
+</li>
+    <li>
+<pkg>mdftracks</pkg> 'MTrackJ' is an 'ImageJ' plugin for motion tracking and analysis. This package reads
+    and writes 'MTrackJ Data Files' ('.mdf'). It supports
+    2D data and read/writes cluster, point, and channel information. If desired,
+    generates track identifiers that are unique over the clusters.
+    See the project page for more information and examples.
+</li>
+    <li>
+<pkg>mkde</pkg> Provides functions to compute and visualize movement-based kernel density estimates (MKDEs) for animal utilization distributions in 2 or 3 spatial dimensions.
+</li>
+    <li>
+<pkg>momentuHMM</pkg> Extended tools for analyzing telemetry data using generalized hidden Markov models. Features of momentuHMM (pronounced ``momentum'') include data pre-processing and visualization, fitting HMMs to location and auxiliary biotelemetry or environmental data, biased and correlated random walk movement models, multiple imputation for incorporating location measurement error and missing data, user-specified design matrices and constraints for covariate modelling of parameters, decoding of the state process, visualization of fitted models, model checking and selection, and simulation. See McClintock and Michelot (2018).
+</li>
+    <li>
+<pkg>mousetrack</pkg> Extract from two-dimensional x-y coordinates of an arm-reaching trajectory, several dependent measures such as area under the curve, latency to start the movement, x-flips, etc.; which characterize the action-dynamics of the response. Mainly developed to analyze data coming from mouse-tracking experiments.
+</li>
+    <li>
+<pkg>mousetrap</pkg> Mouse-tracking, the analysis of mouse movements in computerized
+    experiments, is a method that is becoming increasingly popular in the
+    cognitive sciences. The mousetrap package offers functions for importing,
+    preprocessing, analyzing, aggregating, and visualizing mouse-tracking data.
+</li>
+    <li>
+<pkg>move</pkg> Contains functions to access movement data stored in 'movebank.org'
+    as well as tools to visualize and statistically analyze animal movement data,
+    among others functions to calculate dynamic Brownian Bridge Movement Models.
+    Move helps addressing movement ecology questions.
+</li>
+    <li>
+<pkg>movecost</pkg> Provides the facility to calculate non-isotropic accumulated cost surface and least-cost paths using a number of human-movement-related cost functions that can be selected by the user. It just requires a Digital Terrain Model, a start location and (optionally) destination locations.
+</li>
+    <li>
+<pkg>moveHMM</pkg> Provides tools for animal movement modelling using hidden Markov
+    models. These include processing of tracking data, fitting hidden Markov models
+    to movement data, visualization of data and fitted model, decoding of the state
+    process.
+</li>
+    <li>
+<pkg>moveVis</pkg> Tools to visualize movement data (e.g. from GPS tracking) and temporal changes of environmental data (e.g. from remote sensing) by creating video animations.
+</li>
+    <li>
+<pkg>moveWindSpeed</pkg> Estimating wind speed from trajectories of individually tracked birds using a maximum likelihood approach.
+</li>
+    <li>
+<pkg>oce</pkg> Supports the analysis of Oceanographic data, including 'ADCP'
+    measurements, measurements made with 'argo' floats, 'CTD' measurements,
+    sectional data, sea-level time series, coastline and topographic data, etc.
+    Provides specialized functions for calculating seawater properties such as
+    potential temperature in either the 'UNESCO' or 'TEOS-10' equation of state.
+    Produces graphical displays that conform to the conventions of the
+    Oceanographic literature. This package is discussed extensively in
+    Dan Kelley's book Oceanographic Analysis with R, published
+    in 2018 by 'Springer-Verlag' with ISBN 978-1-4939-8842-6.
+</li>
+    <li>
+<pkg>opentraj</pkg> opentraj uses the Hybrid Single Particle Lagrangian Integrated Trajectory Model (HYSPLIT) for computing simple air parcel trajectories. The functions in this package allow users to run HYSPLIT for trajectory calculations, as well as get its results, directly from R without using any GUI interface.
+</li>
+    <li>
+<pkg>rerddapXtracto</pkg> Contains three functions that access
+    environmental data from any 'ERDDAP' data web service. The rxtracto() function extracts
+    data along a trajectory for a given "radius" around the point. The
+    rxtracto_3D() function extracts data in a box. The rxtractogon() function
+    extracts data in a polygon. All of those three function use the 'rerddap' package
+    to extract the data, and should work with any 'ERDDAP' server.
+    There are also two functions, plotBBox() and plotTrack() that use the 'plotdap'
+    package to simplify the creation of maps of the data.
+</li>
+    <li>
+<pkg>riverdist</pkg> Reads river network shape files and computes network distances.
+    Also included are a variety of computation and graphical tools designed
+    for fisheries telemetry research, such as minimum home range, kernel density
+    estimation, and clustering analysis using empirical k-functions with
+    a bootstrap envelope.  Tools are also provided for editing the river
+    networks, meaning there is no reliance on external software.
+</li>
+    <li>
+<pkg>saccades</pkg> Functions for detecting eye fixations in raw eye-tracking
+    data.  The detection is done using a velocity-based algorithm for
+    saccade detection proposed by Ralf Engbert and Reinhold Kliegl in
+    2003.  The algorithm labels segments as saccades when the velocity of
+    the eye movement exceeds a certain threshold.  Anything between two
+    saccades is considered a fixation.  Thus the algorithm is not
+    appropriate for data containing episodes of smooth pursuit eye
+    movements.
+</li>
+    <li>
+<pkg>SDLfilter</pkg> Functions to filter GPS and/or Argos locations. The provided
+    filters remove temporal and spatial duplicates, fixes located at a given
+    height from estimated high tide line, and locations with high error as
+    proposed in Shimada et al. (2012) and
+    Shimada et al. (2016).
+</li>
+    <li>
+<pkg>SimilarityMeasures</pkg> Functions to run and assist four
+  different similarity measures. The similarity
+  measures included are: longest common
+  subsequence (LCSS), Frechet distance, edit distance
+  and dynamic time warping (DTW). Each of these
+  similarity measures can be calculated from two
+  n-dimensional trajectories, both in matrix form.
+</li>
+    <li>
+<pkg>SiMRiv</pkg> Provides functions to generate and analyze spatially-explicit individual-based multistate movements in rivers,
+  heterogeneous and homogeneous spaces. This is done by incorporating landscape bias on local behaviour, based on
+  resistance rasters. Although originally conceived and designed to simulate trajectories of species constrained to
+  linear habitats/dendritic ecological networks (e.g. river networks), the simulation algorithm is built to be
+  highly flexible and can be applied to any (aquatic, semi-aquatic or terrestrial) organism, independently on the
+  landscape in which it moves. Thus, the user will be able to use the package to simulate movements either in
+  homogeneous landscapes, heterogeneous landscapes (e.g. semi-aquatic animal moving mainly along rivers but also using
+  the matrix), or even in highly contrasted landscapes (e.g. fish in a river network). The algorithm and its input
+  parameters are the same for all cases, so that results are comparable. Simulated trajectories can then be used as
+  mechanistic null models (Potts &amp; Lewis 2014) to test a variety of 'Movement Ecology'
+  hypotheses (Nathan et al. 2008), including landscape effects (e.g. resources,
+  infrastructures) on animal movement and species site fidelity, or for predictive purposes (e.g. road mortality risk,
+  dispersal/connectivity). The package should be relevant to explore a broad spectrum of ecological phenomena, such as
+  those at the interface of animal behaviour, management, landscape and movement ecology, disease and invasive species
+  spread, and population dynamics.
+</li>
+    <li>
+<pkg>smam</pkg> Animal movement models including moving-resting process
+    with embedded Brownian motion according to
+    Yan et al. (2014),
+    Pozdnyakov et al. (2017),
+    Brownian motion with measurement error according to
+    Pozdnyakov et al. (2014),
+    and moving-resting-handling process with embedded Brownian motion,
+    Pozdnyakov et al. (2018).
+</li>
+    <li>
+<pkg>SpaTimeClus</pkg> Mixture model is used to achieve the clustering goal. Each component is itself a mixture model of polynomial autoregressive regressions whose the logistic weights consider the spatial and temporal information.
+</li>
+    <li>
+<pkg>stam</pkg> stam is an evolving package that target on the various
+        methods to conduct Spatio-Temporal Analysis and
+        Modelling,including Exploratory Spatio-Temporal Analysis and
+        Inferred Spatio-Temporal Modelling.
+</li>
+    <li>
+<pkg>stampr</pkg> Perform spatial temporal analysis of moving polygons; a
+    longstanding analysis problem in Geographic Information Systems. Facilitates
+    directional analysis, shape analysis, and some other simple functionality for
+    examining spatial-temporal patterns of moving polygons.
+</li>
+    <li>
+<pkg>stplanr</pkg> Tools for transport planning with an emphasis on spatial transport
+    data and non-motorized modes. Enables common transport planning tasks including:
+    downloading and cleaning transport datasets; creating geographic "desire lines"
+    from origin-destination (OD) data; route assignment, locally and via
+    interfaces to routing services such as http://cyclestreets.net
+    calculation of route segment attributes such as bearing and aggregate flow,
+    and 'travel watershed' analysis.
+    See Lovelace and Ellison (2018).
+</li>
+    <li>
+<pkg>surveillance</pkg> Statistical methods for the modeling and monitoring of time series
+        of counts, proportions and categorical data, as well as for the modeling
+        of continuous-time point processes of epidemic phenomena.
+        The monitoring methods focus on aberration detection in count data time
+        series from public health surveillance of communicable diseases, but
+        applications could just as well originate from environmetrics,
+        reliability engineering, econometrics, or social sciences. The package
+        implements many typical outbreak detection procedures such as the
+        (improved) Farrington algorithm, or the negative binomial GLR-CUSUM
+        method of Höhle and Paul (2008).
+</li>
+    <li>
+<pkg>trackdem</pkg> Obtain population density and body size structure, using video material or image sequences as input. Functions assist in the creation of image sequences from videos, background detection and subtraction, particle identification and tracking. An artificial neural network can be trained for noise filtering. The goal is to supply accurate estimates of population size, structure and/or individual behavior, for use in  evolutionary and ecological studies.
+</li>
+    <li>
+<pkg>trackdf</pkg> Data frame class for storing collective movement data (e.g. fish
+    schools, ungulate herds, baboon troops) collected from GPS trackers or
+    computer vision tracking software.
+</li>
+    <li>
+<pkg>trackeR</pkg> Provides infrastructure for handling running, cycling and swimming data from GPS-enabled tracking devices within R. The package provides methods to extract, clean and organise workout and competition data into session-based and unit-aware data objects of class 'trackeRdata' (S3 class). The information can then be visualised, summarised, and analysed through flexible and extensible methods. Frick and Kosmidis (2017) >, which is updated and maintained as one of the vignettes, provides detailed descriptions of the package and its methods, and real-data demonstrations of the package functionality.
+</li>
+    <li>
+<pkg>trackeRapp</pkg> Provides an integrated user interface and workflow for
+             the analysis of running, cycling and swimming data from GPS-enabled
+             tracking devices.
+</li>
+    <li>
+<pkg>TrackReconstruction</pkg> Reconstructs animal tracks from magnetometer, accelerometer, depth and optional speed data.  Designed primarily using data from Wildlife Computers Daily Diary tags deployed on northern fur seals.
+</li>
+    <li>
+<pkg>trajectories</pkg> Classes and methods for trajectory data, with support for nesting individual Track objects in track sets (Tracks) and track sets for different entities in collections of Tracks. Methods include selection, generalization, aggregation, intersection, simulation, and plotting.
+</li>
+    <li>
+<pkg>trajr</pkg> A toolbox to assist with statistical analysis of 2-dimensional animal trajectories.
+    It provides simple access to algorithms for calculating and assessing a variety of
+    characteristics such as speed and acceleration, as well as multiple measures of
+    straightness or tortuosity. McLean &amp; Skowron Volponi (2018).
+</li>
+    <li>
+<pkg>trip</pkg> Functions for accessing and manipulating spatial data for animal
+    tracking, with straightforward coercion from and to other formats. Filter
+    for speed and create time spent maps from animal track data. There are
+    coercion methods to convert between 'trip' and 'ltraj' from 'adehabitatLT',
+    and between 'trip' and 'psp' and 'ppp' from 'spatstat'. Trip objects
+    can be created from raw or grouped data frames, and from types in the 'sp',
+    'sf', 'amt', 'trackeR', 'mousetrap', and other packages.
+</li>
+    <li>
+<pkg>tripEstimation</pkg> Data handling and estimation functions for animal movement
+    estimation from archival or satellite tags. Helper functions are included
+    for making image summaries binned by time interval from Markov Chain Monte Carlo
+    simulations.
+</li>
+    <li>
+<pkg>VTrack</pkg> Designed to facilitate the assimilation, analysis and synthesis of animal location and movement data collected by the VEMCO suite of acoustic transmitters and receivers. As well as database and geographic information capabilities the principal feature of VTrack is the qualification and identification of ecologically relevant events from the acoustic detection and sensor data. This procedure condenses the acoustic detection database by orders of magnitude, greatly enhancing the synthesis of acoustic detection data.
+</li>
+    <li>
+<pkg>wildlifeDI</pkg> Dynamic interaction refers to spatial-temporal associations
+    in the movements of two (or more) animals. This package provides tools for
+    calculating a suite of indices used for quantifying dynamic interaction with
+    wildlife telemetry data. For more information on each of the methods employed
+    see the references within. The package (as of version 0.3) also has new tools for
+    automating contact analysis in large tracking datasets. The package draws
+    heavily on the classes and methods developed in the 'adehabitat' packages.
+</li>
 
-	 <li><pkg>diveMove</pkg> provides utilities to represent,
-	 visualize, filter, analyze, and summarize time-depth
-	 recorder (TDR) data; miscellaneous functions for handling
-	 location data are also provided.  
-	 </li>
 
-	 <li><pkg>argosfilter</pkg> provides functions to filter
-	 animal satellite tracking data obtained from Argos. It is
-	 especially indicated for telemetry studies of marine
-	 animals, where Argos locations are predominantly of
-	 low-quality.
-	 </li>
-
-	 <li>
-	 <pkg>GeoLight</pkg> provides basic functions for global positioning
-	 based on light intensity measurements over time. Positioning process
-	 includes the determination of sun events, a discrimination of
-	 residency and movement periods, the calibration of period-specific
-	 data and, finally, the calculation of positions.
-	 </li>
-	 
-	 <li>
-	 <pkg>crawl</pkg>:
-	 The (C)orrelated (RA)ndom (W)alk (L)ibrary of R functions
-	 was designed for fitting continuous-time correlated random
-	 walk (CTCRW) models with time indexed covariates. The
-	 model is fit using the Kalman-Filter on a state space
-	 version of the continuous-time stochastic movement process.
-	 </li>
-
-	 <li>
-	 <pkg>move</pkg> is a package for analyzing animal
-	 movement data; it contains functions to access movement data
-	 stored in <a href="http://www.movebank.org/">movebank</a>
-	 as well as tools to visualize and statistically analyse
-	 animal movement data. 
-	 </li>
-
-	 <li> 
-	 <pkg>animalTrack</pkg> provides animal track reconstruction
-	 for high frequency 2-dimensional (2D) or 3-dimensional (3D)
-	 movement data. 2D and 3D animal tracking data can be used to
-	 reconstruct tracks through time/space with correction based
-	 on known positions as well as 3D visualization of animal
-	 position and attitude.	 
-	 </li>
-
-	 <li> 
-	 The <pkg>BBMM</pkg> (Brownian bridge movement model) package
-	 provides an empirical estimate of a movement path using
-	 discrete location data obtained at relatively short time
-	 intervals. This is a continuous-time stochastic model of
-	 movement in which the probability of being in an area during
-	 the time of observation is conditioned on starting and ending
-	 locations. A BBMM is typically fit to animal location data
-	 obtained by a Global Positioning System (GPS) or Very High
-	 Frequency (VHF) device.
-	 </li>
-
-	 <li> 
-	 The <pkg>bcpa</pkg> package for behavioral change point
-	 analysis (BCPA) is a method of identifying hidden shifts in
-	 the underlying parameters of a time series, developed
-	 specifically to be applied to animal movement data which is
-	 irregularly sampled. The original paper on which it is based
-	 is: E. Gurarie, R. Andrews and K. Laidre A novel method for
-	 identifying behavioural changes in animal movement data
-	 (2009) Ecology Letters 12:5 395-408.
-	 </li>
-
-	 <li> The <pkg>smam</pkg> package provides Animal movement models
-	 including moving-resting process with embedded Brownian
-	 motion, Brownian motion with measurement error.
-	   </li>
-
-   <li> The <pkg>BayesianAnimalTracker</pkg> package provides a Bayesian 
-   melding approach to combine the GPS observations and Dead-Reckoned path 
-   for an accurate animal's track, or equivalently, use the GPS observations 
-   to correct the Dead-Reckoned path. It can take the measurement errors in 
-   the GPS observations into account and provide uncertainty statement about 
-   the corrected path. The main calculation can be done by the BMAnimalTrack 
-   function.
-	 </li>
-
-   <li> The <pkg>TrackReconstruction</pkg> package reconstructs animal tracks 
-   from magnetometer, accelerometer, depth and optional speed data. Designed 
-   primarily using data from Wildlife Computers Daily Diary tags deployed on 
-   northern fur seals.
-   </li>
-
-   <li> The <pkg>wildlifeDI</pkg> package provides tools for calculating a 
-   suite of indices used for quantifying dynamic interaction with wildlife 
-   telemetry data. Dynamic interaction refers to spatial-temporal associations 
-   in the movements of two (or more) animals. 
-   </li>
-
-   <li> The <pkg>mkde</pkg> package provides functions to compute and 
-   visualize movement-based kernel density estimates (MKDEs) for animal 
-   utilization distributions in 2 or 3 spatial dimensions.
-   </li>
-
-   <li> The <pkg>fishmove</pkg> package provides functions to predict fish 
-   movement parameters based on multiple regression and plotting leptokurtic 
-   fish dispersal kernels (see Radinger and Wolter, 2013: Patterns and 
-   predictors of fish dispersal in rivers. Fish and Fisheries.)
-   </li>
-
-	<li> The <pkg>ctmcmove</pkg> facilitates taking movement data in xyt
-	format and pairing it with raster covariates within a
-	continuous time Markov chain (CTMC) framework. As described in
-	Hanks et al. (2015), this allows flexible modeling of movement
-	in response to covariates (or covariate gradients) with model
-	fitting possible within a Poisson GLM framework.
-
-	</li>
-
-	<li> The <pkg>ctmm</pkg> provides functions for identifying,
-	fitting, and applying continuous-space, continuous-time
-	stochastic movement models to animal tracking data.  
-	</li>
-
-	<li> The <pkg>moveHMM</pkg> package provides animal movement
-	modelling using hidden Markov models. Pre-processing of
-	tracking data, fitting HMMs to movement data, visualization of
-	data and fitted model.
-        </li>
-
-       <li> The aim of the package <pkg>trackeR</pkg> is to provide
-       infrastructure for handling running and cycling data from
-       GPS-enabled tracking devices. After extraction and appropriate
-       manipulation of the training or competition attributes, the
-       data are placed into session-based and unit-aware data objects
-       of class trackeRdata (S3 class). The information in the
-       resultant data objects can then be visualised, summarised, and
-       analysed through corresponding flexible and extensible methods.
-       </li>
-
-       <li> The <pkg>VTrack</pkg> package is designed to facilitate the
-       assimilation, analysis and synthesis of animal location and
-       movement data collected by the VEMCO suite of acoustic
-       transmitters and receivers. As well as database and geographic
-       information capabilities the principal feature of VTrack is the
-       qualification and identification of ecologically relevant
-       events from the acoustic detection and sensor data. This
-       procedure condenses the acoustic detection database by orders
-       of magnitude, greatly enhancing the synthesis of acoustic
-       detection data.
-       </li>
-
-	 <li>The <pkg>SimilarityMeasures</pkg> package computes four
-	 different similarity measures. The similarity measures included
-	 are: longest common subsequence (LCSS), Frechet distance,
-	 edit distance and dynamic time warping (DTW). Each of these
-	 similarity measures can be calculated from two n-dimensional
-	 trajectories, both in matrix form.</li>
-
-   <li>
-   The <pkg>FLightR</pkg> provides Hidden Markov Models for Solar Geolocation 
-   Archival Tags; it allows estimating positions of animal from
-   data collected by solar geolocation archival tags; check the citations,
-   which include 
-   <a href="http://www.movementecologyjournal.com/content/3/1/25">Rakhimberdiev et al.</a>
-   </li>
-
-	 <li>
-	 The <a href="http://code.google.com/p/geolocation/">
-	 Electronic Tagging Geolocation Packages Repository</a> (off-CRAN) 
-	 site provides a collection of statistical models (and R packages)
-	 to estimate position errors, movement model parameters, 
-	 and most probable positions from tracking data.
-	 </li>
-
-  
-	 <li>The <a href="http://web.science.mq.edu.au/~ijonsen/code.html">bsam</a> (off-CRAN) 
-	 package fits Bayesian state-space models to Argos satellite tracking
-	 data. Currently, models provided are DCRW (for location filtering),
-	 DCRWS (for location filtering and behavioural state estimation), and
-	 hDCRWS (a hierarchical model for location filtering and behavioural
-	 state estimation across multiple animals).
-	 </li>
-
-
-   <li>The <github>calbertsen/argosTrack</github> (off-CRAN) 
-   package allows fitting movement models to Argos data. 
-   </li>
 
 	 </ul>
 	</li>
@@ -546,9 +657,7 @@
   <li><pkg>ncdf4</pkg> and
   <pkg>RNetCDF</pkg> allow reading and writing <a
   href="http://www.unidata.ucar.edu/software/netcdf/">netcdf</a>
-  files; 
-  <pkg>pbdNCDF4</pkg> adds collective parallel read and write capability 
-  to <pkg>ncdf4</pkg>.
+  files.
   </li>
 
   <li>
@@ -568,19 +677,27 @@
   <packagelist>
     <pkg priority="core">adehabitatLT</pkg>
     <pkg                >animalTrack</pkg>
+    <pkg                >anipaths</pkg>
     <pkg		>argosfilter</pkg>
+    <pkg                >AtmRay</pkg>
     <pkg		>BayesianAnimalTracker</pkg>
     <pkg		>BBMM</pkg>
     <pkg		>bcpa</pkg>
+    <pkg                >bsam</pkg>
     <pkg		>CARBayesST</pkg>
+    <pkg                >caribou</pkg>
     <pkg                >crawl</pkg>
     <pkg                >cshapes</pkg>
     <pkg                >ctmcmove</pkg>
     <pkg                >ctmm</pkg>
-    <pkg                >diveMove</pkg>
+    <pkg                >EMbC</pkg>
+    <pkg                >eyelinker</pkg>
+    <pkg                >eyetracking</pkg>
     <pkg                >fishmove</pkg>
     <pkg                >FLightR</pkg>
+    <pkg                >foieGras</pkg>
     <pkg                >gapfill</pkg>
+    <pkg                >gazepath</pkg>
     <pkg                >GeoLight</pkg>
     <pkg                >googleVis</pkg>
     <pkg priority="core">gstat</pkg>
@@ -588,44 +705,65 @@
     <pkg                >lgcp</pkg>
     <pkg                >lme4</pkg>
     <pkg                >M3</pkg>
+    <pkg                >marcher</pkg>
+    <pkg                >mdftracks</pkg>
     <pkg                >mkde</pkg>
+    <pkg                >momentuHMM</pkg>
+    <pkg                >mousetrack</pkg>
+    <pkg                >mousetrap</pkg>
     <pkg                >move</pkg>
+    <pkg                >movecost</pkg>
     <pkg                >moveHMM</pkg>
+    <pkg                >moveVis</pkg>
+    <pkg                >moveWindSpeed</pkg>
     <pkg                >mvtsplot</pkg>
     <pkg                >ncdf4</pkg>
     <pkg                >nlme</pkg>
+    <pkg                >oce</pkg>
     <pkg                >openair</pkg>
+    <pkg                >opentraj</pkg>
     <pkg                >pastecs</pkg>
-    <pkg                >pbdNCDF4</pkg>
     <pkg                >plm</pkg>
     <pkg                >plotKML</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg priority="core">raster</pkg>
     <pkg                >rasterVis</pkg>
+    <pkg                >rerddapXtracto</pkg>
     <pkg                >rgl</pkg>
+    <pkg                >riverdist</pkg>
     <pkg                >rmatio</pkg>
     <pkg                >RNetCDF</pkg>
     <pkg                >rsatscan</pkg>
+    <pkg                >saccades</pkg>
+    <pkg                >SDLfilter</pkg>
     <pkg                >sf</pkg>
     <pkg                >SimilarityMeasures</pkg>
+    <pkg                >SiMRiv</pkg>
     <pkg                >smam</pkg>
     <pkg                >solaR</pkg>
     <pkg priority="core">sp</pkg>
     <pkg priority="core">spacetime</pkg>
     <pkg                >spate</pkg>
     <pkg                >spatstat</pkg>
-    <pkg                >SpatioTemporal</pkg>
+    <pkg                >SpaTimeClus</pkg>
     <pkg                >spBayes</pkg>
     <pkg                >sphet</pkg>
     <pkg                >splancs</pkg>
     <pkg                >splm</pkg>
     <pkg                >spTimer</pkg>
     <pkg                >stam</pkg>
+    <pkg                >stampr</pkg>
     <pkg                >Stem</pkg>
     <pkg                >STMedianPolish</pkg>
+    <pkg                >stplanr</pkg>
     <pkg priority="core">surveillance</pkg>
+    <pkg                >trackdem</pkg>
+    <pkg                >trackdf</pkg>
     <pkg                >trackeR</pkg>
+    <pkg                >trackeRapp</pkg>
     <pkg                >TrackReconstruction</pkg>
+    <pkg                >trajectories</pkg>
+    <pkg                >trajr</pkg>
     <pkg priority="core">trip</pkg>
     <pkg                >tripEstimation</pkg>
     <pkg                >VTrack</pkg>

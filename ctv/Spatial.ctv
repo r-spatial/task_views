@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-01-14</version>
+  <version>2021-02-06</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -171,7 +171,7 @@
         blog entry</a> described a GeoJSON-centred approach to reading GeoJSON
         and WKT data. GeoJSON can be written and read using <pkg>rgdal</pkg>, and
         WKT by <pkg>rgeos</pkg>. The entry lists <pkg>geojson</pkg>,
-        <pkg>geojsonio</pkg>, and <pkg>geoaxe</pkg> among
+        and <pkg>geojsonio</pkg>, among
         others.</li>
         <li><em>Geographic Markup Language (GML):</em>GML format can be read and writen with
         <pkg>rgdal</pkg>. Additional GML native reader and writer is provided by <pkg>geometa</pkg> 
@@ -236,6 +236,12 @@
         an open source implementation used widely for serving spatial data.</li>
         <li><pkg>geonapi</pkg> provides an interface to the <a href="https://geonetwork-opensource.org/">GeoNetwork</a> 
         legacy API, an opensource catalogue for managing geographic metadata.</li>
+       <li><pkg>rgee</pkg> ia an <a href="https://earthengine.google.com/">Earth Engine</a>  
+       client library for R. All of the 'Earth Engine' API classes, modules, 
+       and functions are made available. Additional functions implemented 
+       include importing (exporting) of Earth Engine spatial objects, 
+       extraction of time series, interactive map display, assets management 
+       interface, and metadata display.</li>
     </ul>
 
     <p><strong>Specific geospatial data sources of interest</strong></p>
@@ -323,7 +329,6 @@
       checking for the right data order in calculations).</li>
       <li><pkg>taRifx</pkg> is a collection of utility and 
       convenience functions, and some interesting spatial functions.</li>
-      <li><pkg>geoaxe</pkg>allows users to split 'geospatial' objects into pieces.</li>
       <li>The <pkg>rcosmo</pkg> package offers various tools for geometric transformations, 
       computations, and statistical analysis of spherical data.</li>
       <li>The <pkg>areal</pkg> package can be used to interpolate overlapping but incongruent polygons,
@@ -673,14 +678,6 @@
       two-stage least squares and generalised method of moments estimators are
       an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
       accommodate both autocorrelation and heteroskedasticity.
-      The <pkg>McSpatial</pkg> provides functions 
-      for locally weighted regression, semiparametric and conditionally 
-      parametric regression, fourier and cubic spline functions, GMM and 
-      linearized spatial logit and probit, k-density functions and 
-      counterfactuals, nonparametric quantile regression and conditional 
-      density functions, Machado-Mata decomposition for quantile 
-      regressions, spatial AR model, repeat sales models, and 
-      conditionally parametric logit and probit.
       The <pkg>splm</pkg> package provides methods for 
       fitting spatial panel data by maximum likelihood and GM. The two 
       small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
@@ -787,7 +784,6 @@
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
-    <pkg>geoaxe</pkg>
     <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
     <pkg>geojsonio</pkg>
@@ -831,7 +827,6 @@
     <pkg>mapview</pkg>
     <pkg>marmap</pkg>
     <pkg>MBA</pkg>
-    <pkg>McSpatial</pkg>
     <pkg>micromap</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
@@ -860,6 +855,7 @@
     <pkg>regress</pkg>
     <pkg>rgbif</pkg>
     <pkg priority="core">rgdal</pkg>
+    <pkg>rgee</pkg>
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>rgrass7</pkg>
