@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-02-06</version>
+  <version>2021-02-17</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -290,6 +290,14 @@
       including the option to bind the data spatially on import. </li>
       <li><pkg>tigris</pkg> provides access to cartographic elements provided by the US
       Census Bureau TIGER, including cartographic boundaries, roads, and water.</li>
+      <li><pkg>chilemapas</pkg> provides access to spatial data of political 
+      and administrative divisions of Chile.</li>
+      <li><pkg>geobr</pkg> provides easy access to official spatial data 
+      sets of Brazil for multiple geographies and years.</li>
+      <li><pkg>geouy</pkg> loads and process geographic information for 
+      Uruguay.</li>
+      <li><pkg>RCzechia</pkg> downloads spatial shape files of administrative 
+      regions and other spatial objects of the Czech Republic.</li>
     </ul>
     
     <h2 id="handling-spatial-data">Handling spatial data</h2>  
@@ -317,8 +325,6 @@
       <li>The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data for
       animal tracking.</li>
-      <li><pkg>spcosa</pkg> provides spatial coverage
-      sampling and random sampling from compact geographical strata.</li>
       <li><pkg>magclass</pkg> offers a data class for increased
       interoperability working with spatial-temporal data together with
       corresponding functions and methods (conversions, basic calculations
@@ -462,11 +468,9 @@
       K-function. The <pkg>aspace</pkg> package is a collection of
       functions for estimating centrographic statistics and computational
       geometries from spatial point patterns.
-      <pkg>DSpat</pkg> contains functions for spatial modelling
-      for distance sampling data and <pkg>spatialsegregation</pkg> 
+      <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
-      patterns. <pkg>GriegSmith</pkg> uses the Grieg-Smith method on 
-      2 dimensional spatial data. The <pkg>dbmss</pkg> package allows 
+      patterns. The <pkg>dbmss</pkg> package allows 
 -      simple computation of a full set of spatial statistic functions of 
 -      distance, including classical ones (Ripley's K and others) and more 
 -      recent ones used by spatial economists (Duranton and Overman's Kd, 
@@ -766,6 +770,7 @@
     <pkg>CARBayes</pkg>
     <pkg>cartogram</pkg>
     <pkg>cartography</pkg>
+    <pkg>chilemapas</pkg>
     <pkg priority="core">classInt</pkg>
     <pkg>cleangeo</pkg>
     <pkg>CompRandFld</pkg>
@@ -775,7 +780,6 @@
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>diseasemapping</pkg>
-    <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
     <pkg>ExceedanceTools</pkg>
     <pkg>fields</pkg>
@@ -784,6 +788,7 @@
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
+    <pkg>geobr</pkg>
     <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
     <pkg>geojsonio</pkg>
@@ -798,11 +803,11 @@
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
     <pkg>geostatsp</pkg>
+    <pkg>geouy</pkg>
     <pkg>ggmap</pkg>
     <pkg>ggsn</pkg>
     <pkg>gmt</pkg>
     <pkg>inlmisc</pkg>
-    <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>Guerry</pkg>
     <pkg>GWmodel</pkg>
@@ -851,6 +856,7 @@
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>rcosmo</pkg>
+    <pkg>RCzechia</pkg>
     <pkg>recmap</pkg>
     <pkg>regress</pkg>
     <pkg>rgbif</pkg>
@@ -897,7 +903,6 @@
     <pkg>spatsurv</pkg>
     <pkg>spBayes</pkg>
     <pkg>spBayesSurv</pkg>
-    <pkg>spcosa</pkg>
     <pkg priority="core">spdep</pkg>
     <pkg>sperrorest</pkg>
     <pkg>spgrass6</pkg>
