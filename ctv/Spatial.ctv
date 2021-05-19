@@ -300,6 +300,9 @@
       regions and other spatial objects of the Czech Republic.</li>
       <li><pkg>rgugik</pkg> allows to search and retrieve data from Polish Head
       Office of Geodesy and Cartography ("GUGiK").</li>
+      <li><pkg>giscoR</pkg> provides access to spatial elements provided by GISCO - Eurostat, including shape files of countries, NUTS regions, municipalities and other spatial objects.</li>
+      <li><pkg>mapSpain</pkg> downloads spatial shape files of administrative 
+      regions and other spatial objects of Spain.</li>
     </ul>
     
     <h2 id="handling-spatial-data">Handling spatial data</h2>  
