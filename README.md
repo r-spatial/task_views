@@ -1,6 +1,6 @@
 # Impending change: 
 
-All CRAN Task Views will be handled and published from https://github.com/cran-task-views within weeks rather than months, so any issues should be raised after migration to markdown has been completed and this repository archived.
+All CRAN Task Views will be handled and published from https://github.com/cran-task-views within weeks rather than months (so early in 2022), so any issues should be raised after migration to markdown has been completed and this repository archived.
 
 # Spatial and SpatioTemporal Task Views
 
