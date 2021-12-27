@@ -678,8 +678,11 @@
       an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
       accommodate both autocorrelation and heteroskedasticity.
       The <pkg>splm</pkg> package provides methods for 
-      fitting spatial panel data by maximum likelihood and GM. The two 
-      small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
+      fitting spatial panel data by maximum likelihood and GM. 
+      The <pkg>spsur</pkg> package provides functions to test and estimate 
+      spatial seemingly unrelated regression models (spatial SUR) by maximum likelihood 
+      and three-stage least squares. 
+      The two small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
       alternative implementations without most of the facilities of 
       <pkg>splm</pkg>. The HSAR package provides Hierarchical
       Spatial Autoregressive Models (HSAR), based on a Bayesian Markov Chain
@@ -905,6 +908,7 @@
     <pkg>spmoran</pkg>
     <pkg>spsann</pkg>
     <pkg>spselect</pkg>
+    <pkg>spsur</pkg>    
     <pkg>spsurvey</pkg>
     <pkg>spTimer</pkg>
     <pkg>SSN</pkg>
